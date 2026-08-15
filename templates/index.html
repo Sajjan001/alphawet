@@ -1,0 +1,167 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow"><span class="dot"></span>AI + Automation + Software + Web</span>
+          <h1>Build Smarter. Automate Faster. <span class="gradient-text">Grow Better.</span></h1>
+          <p class="lead">We build AI-powered software, websites, automation systems, and digital solutions that help businesses save time, generate more leads, and scale faster.</p>
+          <div class="hero-ctas">
+            <a href="#contact" class="btn btn-primary">Get a Free Consultation</a>
+            <a href="/services" class="btn btn-ghost">Explore Our Services</a>
+          </div>
+          <div class="hero-meta">
+            <div><strong>15+</strong><span>Service categories</span></div>
+            <div><strong>40+</strong><span>Projects delivered</span></div>
+            <div><strong>12+</strong><span>Industries served</span></div>
+            <div><strong>Global</strong><span>India + international clients</span></div>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="hero-core"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 3l1.6 4.4L18 9l-4.4 1.6L12 15l-1.6-4.4L6 9l4.4-1.6z"/></svg></div>
+          <div class="orbit-card orbit-card--1"><div class="row"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="5" width="16" height="12" rx="4"/><path d="M9 21l2.5-4h1L15 21"/></svg></div><div><strong>AI Chatbot</strong><span>Responding live</span></div></div></div>
+          <div class="orbit-card orbit-card--2"><div class="row"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 20V4M4 20h16"/><rect x="7" y="13" width="2.6" height="7"/><rect x="12" y="9" width="2.6" height="11"/><rect x="17" y="6" width="2.6" height="14"/></svg></div><div><strong>Analytics</strong><span>Live dashboard</span></div></div></div>
+          <div class="orbit-card orbit-card--3"><div class="row"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="6" cy="6" r="2.4"/><circle cx="18" cy="6" r="2.4"/><circle cx="12" cy="18" r="2.4"/><path d="M8 7l7.5 8M16 7L9 15M6 8.4V15M18 8.4V15"/></svg></div><div><strong>Automation</strong><span>Running 24/7</span></div></div></div>
+          <div class="orbit-card orbit-card--4"><div class="row"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="0.8" fill="currentColor"/></svg></div><div><strong>Leads</strong><span>+128 this week</span></div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TRUST / CAPABILITY STRIP ============ -->
+    <section class="trust-strip">
+      <div class="container trust-row">
+        <span class="label">What We Build</span>
+        <div class="trust-badges" id="trustBadges"></div>
+      </div>
+    </section>
+
+    <!-- ============ WHY CHOOSE US ============ -->
+    <section class="section" id="why-us">
+      <div class="container">
+        <div class="section-head center">
+          <span class="eyebrow"><span class="dot"></span>Why AlphaWetAI</span>
+          <h2>Why Businesses Choose Us</h2>
+        </div>
+        <div class="grid grid-3" id="whyUsGrid"></div>
+      </div>
+    </section>
+
+    <!-- ============ HOW WE WORK ============ -->
+    <section class="section section--dark" id="process">
+      <div class="container">
+        <div class="section-head center">
+          <span class="eyebrow"><span class="dot"></span>How We Work</span>
+          <h2>A clear, five-step process</h2>
+        </div>
+        <div class="process-row" id="processRow"></div>
+      </div>
+    </section>
+
+    <!-- ============ PORTFOLIO ============ -->
+    <section class="section section--soft" id="portfolio">
+      <div class="container">
+        <div class="section-head center">
+          <span class="eyebrow"><span class="dot"></span>Portfolio</span>
+          <h2>Selected Case Studies</h2>
+          <p>A sample of the problems we've solved for clients recently.</p>
+        </div>
+        <div class="grid grid-3" id="portfolioGrid"></div>
+      </div>
+    </section>
+
+    <!-- ============ CTA BANNER ============ -->
+    <section class="section section--tight">
+      <div class="container">
+        <div class="cta-banner reveal">
+          <h2>Have a Business Problem? Let's Build the Solution.</h2>
+          <p>Tell us what you are trying to improve, automate, or build. Our team will identify the right technology solution for your business.</p>
+          <div class="hero-ctas">
+            <a href="#contact" class="btn btn-primary">Get Free Consultation</a>
+            <a href="#contact" class="btn btn-outline">Discuss Your Project</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section section--dark" id="contact">
+      <div class="container">
+        <div class="section-head center">
+          <span class="eyebrow"><span class="dot"></span>Contact Us</span>
+          <h2>Request a Consultation</h2>
+          <p>Share a few details about your business and what you're looking for — we'll get back to you within one business day.</p>
+        </div>
+        <div class="contact-grid">
+          <aside class="contact-info-card reveal">
+            <h3>Let's talk</h3>
+            <p>Prefer to reach out directly? We're happy to jump on a call or email.</p>
+            <div class="contact-line"><div class="ic" data-icon="mail"></div><div><strong data-email>hello@alphawetai.com</strong><span>Email us anytime</span></div></div>
+            <div class="contact-line"><div class="ic" data-icon="phone"></div><div><strong data-phone>+91 62636 13169</strong><span>Mon–Sat, 10am–7pm IST</span></div></div>
+            <div class="contact-line"><div class="ic" data-icon="whatsapp"></div><div><a href="#" data-whatsapp><strong>Chat on WhatsApp</strong></a><span>Fastest response</span></div></div>
+            <div class="contact-line"><div class="ic" data-icon="location"></div><div><strong data-location>Bangalore, India</strong><span>Working with clients worldwide</span></div></div>
+          </aside>
+
+          <form class="card form-card reveal" id="contactForm" novalidate>
+            <div class="form-grid">
+              <div class="form-field">
+                <label for="fName">Name <span class="req">*</span></label>
+                <input id="fName" name="name" type="text" required autocomplete="name" placeholder="Your full name" />
+              </div>
+              <div class="form-field">
+                <label for="fCompany">Company Name</label>
+                <input id="fCompany" name="company" type="text" autocomplete="organization" placeholder="Your company" />
+              </div>
+              <div class="form-field">
+                <label for="fEmail">Email <span class="req">*</span></label>
+                <input id="fEmail" name="email" type="email" required autocomplete="email" placeholder="you@company.com" />
+              </div>
+              <div class="form-field">
+                <label for="fPhone">Phone / WhatsApp</label>
+                <input id="fPhone" name="phone" type="tel" autocomplete="tel" placeholder="+91 00000 00000" />
+              </div>
+              <div class="form-field">
+                <label for="serviceSelect">What do you need? <span class="req">*</span></label>
+                <select id="serviceSelect" name="service" required>
+                  <option value="" selected disabled>Select a service</option>
+                </select>
+              </div>
+              <div class="form-field">
+                <label for="budgetSelect">Budget Range</label>
+                <select id="budgetSelect" name="budget">
+                  <option value="" selected disabled>Select a range</option>
+                </select>
+              </div>
+              <div class="form-field full">
+                <label for="timelineSelect">Expected Timeline</label>
+                <select id="timelineSelect" name="timeline">
+                  <option value="" selected disabled>Select a timeline</option>
+                </select>
+              </div>
+              <div class="form-field full">
+                <label for="fMessage">Project Description <span class="req">*</span></label>
+                <textarea id="fMessage" name="message" required placeholder="Tell us what you're trying to build, automate, or improve…"></textarea>
+              </div>
+            </div>
+            <div class="form-foot">
+              <p class="form-note" style="margin:0;">We respond within one business day. No spam, ever.</p>
+              <button type="submit" class="btn btn-primary">Request a Consultation<span data-icon="arrowRight"></span></button>
+            </div>
+            <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-head center">
+          <span class="eyebrow"><span class="dot"></span>FAQ</span>
+          <h2>Frequently Asked Questions</h2>
+        </div>
+        <div class="faq-list" id="faqList"></div>
+      </div>
+    </section>
+{% endblock %}

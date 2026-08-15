@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{% block title %}AlphaWetAI — AI, Automation, Software &amp; Web Development Company{% endblock %}</title>
+  <meta name="description" content="{% block description %}AlphaWetAI builds AI-powered software, websites, business automation, and digital solutions that help businesses save time, generate more leads, and scale faster. Serving clients across India and worldwide.{% endblock %}" />
+  <meta name="theme-color" content="#080b14" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="AlphaWetAI — Build Smarter. Automate Faster. Grow Better." />
+  <meta property="og:description" content="AI-powered software, websites, automation systems, and digital solutions for growing businesses." />
+
+  <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/favicon-source.png') }}" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+  {% block extra_head %}{% endblock %}
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-inner">
+      <a href="/" class="brand"><img class="mark" src="{{ url_for('static', filename='images/logo-icon.png') }}" alt="AlphaWetAI logo" /><span data-brand>AlphaWetAI</span></a>
+      <nav class="nav-links" id="navLinksDesktop" aria-label="Primary"></nav>
+      <div class="nav-actions">
+        <a href="/#contact" class="btn btn-outline btn-sm">Get a Free Consultation</a>
+        <button type="button" class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false"></button>
+      </div>
+    </div>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile">
+      <div id="navLinksMobile"></div>
+      <a href="/#contact" class="btn btn-primary btn-block">Get a Free Consultation</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    {% block content %}{% endblock %}
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/" class="brand"><img class="mark" src="{{ url_for('static', filename='images/logo-icon.png') }}" alt="AlphaWetAI logo" /><span data-brand>AlphaWetAI</span></a>
+          <p data-tagline>AI • Automation • Software • Web • Data</p>
+          <div class="footer-social">
+            <a href="#" data-linkedin aria-label="LinkedIn"><span data-icon="linkedin"></span></a>
+            <a href="#" data-whatsapp aria-label="WhatsApp"><span data-icon="whatsapp"></span></a>
+            <a href="#" data-email aria-label="Email"><span data-icon="mail"></span></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul id="footerNav"></ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul id="footerServices"></ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="#" data-email>hello@alphawetai.com</a></li>
+            <li><a href="#" data-phone>+91 62636 13169</a></li>
+            <li><a href="#" data-whatsapp>WhatsApp</a></li>
+            <li><a href="#" data-linkedin>LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="currentYear"></span> <span data-brand-full>AlphaWetAI Technologies</span>. All rights reserved.</span>
+        <span>Made with AI, automation, and a lot of coffee.</span>
+      </div>
+    </div>
+  </footer>
+
+  <button type="button" class="back-to-top" id="backToTop" aria-label="Back to top"></button>
+
+  <div class="modal-overlay" id="caseStudyModal">
+    <div class="modal-box"></div>
+  </div>
+
+  <div class="modal-overlay" id="jobModal">
+    <div class="modal-box"></div>
+  </div>
+
+  <script src="{{ url_for('static', filename='js/icons.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/data.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+  {% block extra_scripts %}{% endblock %}
+</body>
+</html>

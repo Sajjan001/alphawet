@@ -1,0 +1,14 @@
+# Cloudflare Pages config — only needed if you deploy via the Wrangler CLI
+# (`npx wrangler pages deploy dist`) instead of the dashboard drag-and-drop
+# upload. If you use the dashboard, KV bindings are configured there instead
+# under Pages project -> Settings -> Functions -> KV namespace bindings, and
+# this file is not required.
+
+name = "alphawetai"
+pages_build_output_dir = "dist"
+
+# Create the namespace first: `npx wrangler kv namespace create FORMS_KV`
+# then paste the id it prints below.
+[[kv_namespaces]]
+binding = "FORMS_KV"
+id = "REPLACE_WITH_YOUR_KV_NAMESPACE_ID"
